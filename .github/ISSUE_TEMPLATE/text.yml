@@ -3,6 +3,10 @@ description: 테스트 코드를 작성하거나 기존 테스트 코드를 리�
 title: "[🧪 test] "
 labels: ["🧪 test"]
 body:
+  - type: markdown
+    attributes:
+      label: ❤ 테스트 기본
+      value: "테스트 대상에 대해서 기본적인 내용을 작성해주세요"
   - type: textarea
     id: test-description
     attributes:
