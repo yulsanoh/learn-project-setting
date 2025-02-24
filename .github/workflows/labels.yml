@@ -3,7 +3,7 @@ name: "🔖 Sync GitHub Labels"
 on:
   push:
     branches:
-      - main
+      - main # main 브랜치에 push할 때 실행
 
 jobs:
   sync-labels:
@@ -15,5 +15,6 @@ jobs:
       - name: Sync Labels
         uses: micnncim/action-label-syncer@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }} # 'github_token'이 아니라 'token' 사용
           manifest: ".github/labels.yml"
+          prune: true # 기존 라벨을 삭제하지 않도록 설정 (원하는 경우 true로 변경 가능)
