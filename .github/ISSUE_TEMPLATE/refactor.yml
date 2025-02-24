@@ -1,0 +1,14 @@
+name: "🔨 Refactor"
+description: "코드를 개선하려면 이 템플릿을 사용하세요."
+title: "[🔨 Refactor]: "
+labels: ["🔨 refactor"]
+assignees: []
+
+body:
+  - type: textarea
+    id: refactor-description
+    attributes:
+      label: "📄 리팩토링할 코드"
+      description: "어떤 부분을 개선할 예정인가요?"
+    validations:
+      required: true

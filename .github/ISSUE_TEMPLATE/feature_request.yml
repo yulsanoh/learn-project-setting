@@ -1,0 +1,38 @@
+name: "🚀 Feature Request"
+description: "새로운 기능이 필요하다면 이 템플릿을 사용해주세요."
+title: "[🚀 Feature]: "
+labels: ["🚀 feature"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 기능 요청  
+        원하는 기능에 대해 설명해주세요.
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: "📄 기능 설명"
+      description: "추가하고 싶은 기능을 설명해주세요."
+      placeholder: "예: 소셜 로그인 기능 추가"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: "🤔 이 기능이 필요한 이유"
+      description: "왜 이 기능이 필요하다고 생각하나요?"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: feature-priority
+    attributes:
+      label: "🚦 기능 우선순위"
+      options:
+        - "🟥 High (필수)"
+        - "🟨 Medium (권장)"
+        - "🟩 Low (선택)"

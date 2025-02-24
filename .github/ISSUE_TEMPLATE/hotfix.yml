@@ -1,0 +1,14 @@
+name: "⚡ Hotfix"
+description: "긴급한 버그 수정이 필요한 경우 이 템플릿을 사용하세요."
+title: "[⚡ Hotfix]: "
+labels: ["⚡ hotfix"]
+assignees: []
+
+body:
+  - type: textarea
+    id: hotfix-description
+    attributes:
+      label: "📄 긴급 수정 필요 이유"
+      description: "이 버그가 얼마나 심각한 영향을 미치는지 설명해주세요."
+    validations:
+      required: true

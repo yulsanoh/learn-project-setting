@@ -1,0 +1,14 @@
+name: "🎨 UI/UX 개선"
+description: "디자인 및 사용자 경험 개선 요청을 위한 템플릿입니다."
+title: "[🎨 UI/UX]: "
+labels: ["🎨 ui/ux"]
+assignees: []
+
+body:
+  - type: textarea
+    id: ui-description
+    attributes:
+      label: "📄 개선할 UI/UX 요소"
+      description: "어떤 UI/UX 요소를 개선할 계획인가요?"
+    validations:
+      required: true

@@ -1,0 +1,14 @@
+name: "📖 Documentation"
+description: "문서를 수정하거나 새로 작성할 때 이 템플릿을 사용하세요."
+title: "[📖 Docs]: "
+labels: ["📖 docs"]
+assignees: []
+
+body:
+  - type: textarea
+    id: documentation-description
+    attributes:
+      label: "📄 문서 수정 내용"
+      description: "어떤 내용을 추가 또는 수정해야 하나요?"
+    validations:
+      required: true

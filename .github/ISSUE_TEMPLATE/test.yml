@@ -1,0 +1,14 @@
+name: "🧪 Test"
+description: "테스트 코드를 추가하거나 수정할 때 이 템플릿을 사용하세요."
+title: "[🧪 Test]: "
+labels: ["🧪 test"]
+assignees: []
+
+body:
+  - type: textarea
+    id: test-description
+    attributes:
+      label: "📄 테스트할 기능"
+      description: "어떤 기능을 테스트할 예정인가요?"
+    validations:
+      required: true
