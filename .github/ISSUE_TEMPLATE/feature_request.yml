@@ -3,41 +3,44 @@ description: 새로운 기능을 제안하는 이슈입니다.
 title: "[🚀 Feature] "
 labels: ["🚀 feature"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📄 설명  
+        추가하고 싶은 기능에 대한 설명을 자세히 작성해 주세요.
+
   - type: textarea
     id: feature-description
     attributes:
-      label: 📄 설명
-      description: |
-        추가하고 싶은 기능에 대한 설명을 자세히 작성해 주세요.
-        -
-      placeholder: |
-        예:
-        - 다크 모드 지원
-        - 소셜 로그인(Google, Kakao) 기능 추가
-        - 프로필 사진 업로드 기능
+      label: "기능 설명"
+      placeholder: "예: 다크 모드 지원"
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 🎯 필요성  
+        이 기능이 왜 필요한지 설명해 주세요.
 
   - type: textarea
     id: feature-benefit
     attributes:
-      label: 🎯 필요성
-      description: |
-        이 기능이 왜 필요한지 설명해 주세요.
-        -
-      placeholder: |
-        예:
-        - 사용자 경험 향상을 위해 필요함
-        - 경쟁 서비스 대비 기능이 부족함
-        - 접근성을 개선하기 위해 필요함
+      label: "필요성"
+      placeholder: "예: 사용자 경험 향상을 위해 필요함"
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 📝 추가 정보  
+        추가로 공유하고 싶은 내용이 있다면 작성해 주세요.
 
   - type: textarea
     id: feature-more
     attributes:
-      label: 📝 추가 정보
-      description: 추가로 공유하고 싶은 내용이 있다면 작성해 주세요.
+      label: "추가 정보"
       placeholder: "예: 관련 레퍼런스 링크, 비슷한 서비스의 사례 등"
     validations:
       required: false

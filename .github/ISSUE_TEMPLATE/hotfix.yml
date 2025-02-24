@@ -3,13 +3,16 @@ description: 긴급한 버그 수정을 위한 이슈입니다.
 title: "[⚡ Hotfix] "
 labels: ["⚡ hotfix"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📄 설명  
+        긴급한 버그에 대한 설명을 작성해 주세요.
+
   - type: textarea
     id: hotfix-description
     attributes:
-      label: 📄 설명
-      description: |
-        긴급한 버그에 대한 설명을 작성해 주세요.
-        -
+      label: "버그 설명"
       placeholder: |
         예:
         - 결제 API가 응답하지 않음
@@ -18,11 +21,16 @@ body:
     validations:
       required: true
 
+  - type: markdown
+    attributes:
+      value: |
+        ## 📝 추가 정보  
+        추가로 공유하고 싶은 내용이 있다면 작성해 주세요.
+
   - type: textarea
     id: hotfix-more
     attributes:
-      label: 📝 추가 정보
-      description: 추가로 공유하고 싶은 내용이 있다면 작성해 주세요.
+      label: "추가 정보"
       placeholder: "예: 해당 버그가 발생한 특정 시간대, 로그 정보 등"
     validations:
       required: false
