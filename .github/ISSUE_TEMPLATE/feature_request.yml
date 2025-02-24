@@ -1,5 +1,5 @@
 name: 🚀 Feature Request
-description: 새로운 기능을 제안하는 이슈입니다.
+description: 새로운 기능을 개발하는 이슈입니다.
 title: "[🚀 Feature] "
 labels: ["🚀 feature"]
 body:
@@ -7,27 +7,35 @@ body:
     attributes:
       value: |
         ## 📄 설명  
-        추가하고 싶은 기능에 대한 설명을 자세히 작성해 주세요.
+        추가할 기능에 대한 설명을 자세히 작성해 주세요.
 
   - type: textarea
     id: feature-description
     attributes:
       label: "기능 설명"
-      placeholder: "예: 다크 모드 지원"
+      placeholder: |
+        예:
+        - 다크 모드 지원
+        - 소셜 로그인(Google, Kakao) 기능 추가
+        - 프로필 사진 업로드 기능
     validations:
       required: true
 
   - type: markdown
     attributes:
       value: |
-        ## 🎯 필요성  
-        이 기능이 왜 필요한지 설명해 주세요.
+        ## 🔧 세부 작업 내용  
+        기능을 구현하기 위한 작업 목록을 작성해 주세요.
 
   - type: textarea
-    id: feature-benefit
+    id: feature-tasks
     attributes:
-      label: "필요성"
-      placeholder: "예: 사용자 경험 향상을 위해 필요함"
+      label: "작업 내용"
+      placeholder: |
+        예:
+        - [ ] 다크 모드 토글 버튼 추가
+        - [ ] 사용자의 테마 설정을 로컬 저장
+        - [ ] 페이지 로드 시 저장된 테마 적용
     validations:
       required: true
 
@@ -41,6 +49,6 @@ body:
     id: feature-more
     attributes:
       label: "추가 정보"
-      placeholder: "예: 관련 레퍼런스 링크, 비슷한 서비스의 사례 등"
+      placeholder: "예: 관련 레퍼런스 링크, 참고할 프로젝트 등"
     validations:
       required: false
