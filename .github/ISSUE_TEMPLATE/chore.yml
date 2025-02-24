@@ -1,32 +1,71 @@
-name: ⚙️ chore
-description: 빌드, 패키지, 설정 파일, 환경 변수 등 기능/버그 수정 외의 잡일을 수행합니다.
-title: "[⚙️ chore] "
-labels: ["⚙️ chore"]
+name: "⚙️ Chore 작업"
+description: "빌드, 패키지, 설정 파일, 환경 변수 등 기능/버그 수정 외의 작업을 수행합니다."
+title: "[⚙️ chore]: "
+labels: ["chore"]
+assignees: []
+
 body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ⚙️ Chore 작업 템플릿  
+        아래 정보를 작성하여 **작업의 목적과 진행 사항을 명확히 정리**해주세요.
+
   - type: textarea
     id: chore-description
     attributes:
-      label: 📄 설명
+      label: "📄 작업 설명"
       description: |
-        작업에 대한 설명을 자세히 작성해 주세요.
-        -
-      placeholder:
+        작업의 목적과 수행해야 하는 내용을 자세히 작성해 주세요.
+        - 이 작업이 왜 필요한가요?
+        - 어떤 변경 사항이 포함되나요?
+      placeholder: "예: ESLint 설정 변경, Webpack 빌드 최적화"
     validations:
       required: true
-  - type: textarea
+
+  - type: checkboxes
     id: chore-tasks
     attributes:
-      label: ⚙️ Chore Tasks
+      label: "📝 세부 작업 목록"
       description: |
-        Chore Tasks를 최대한 세분화해서 작성해 주세요.
-        - [ ] 체크박스
-      placeholder:
-    validations:
-      required: true
-  - type: textarea
-    id: chore-more
+        수행해야 할 작업을 **체크리스트** 형식으로 정리해 주세요.
+      options:
+        - label: "환경 변수 업데이트"
+        - label: "패키지 버전 업데이트"
+        - label: "빌드 스크립트 수정"
+        - label: "기타 (직접 작성)"
+
+  - type: dropdown
+    id: chore-priority
     attributes:
-      label: 📝 메모
-      description: 더 하고 싶은 말이 있다면 작성해 주세요.
+      label: "🚀 작업 우선순위"
+      description: "작업의 우선순위를 선택해 주세요."
+      options:
+        - "🟥 High (긴급)"
+        - "🟨 Medium (보통)"
+        - "🟩 Low (낮음)"
+
+  - type: textarea
+    id: chore-impact
+    attributes:
+      label: "⚠️ 예상 영향 범위"
+      description: |
+        이 변경이 프로젝트에 미칠 영향을 설명해 주세요.
+        - 시스템에 미치는 영향은?
+        - 다른 기능과의 연관성은?
+      placeholder: "예: 이 작업을 완료하면 개발 환경이 개선됩니다."
+
+  - type: input
+    id: chore-assignee
+    attributes:
+      label: "👤 담당자"
+      description: "작업을 수행할 담당자의 GitHub ID를 입력해 주세요."
+      placeholder: "@your-github-id"
+
+  - type: textarea
+    id: chore-notes
+    attributes:
+      label: "📌 추가 메모"
+      description: "추가로 공유하고 싶은 사항이 있다면 작성해 주세요."
     validations:
       required: false
