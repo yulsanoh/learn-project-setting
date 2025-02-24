@@ -31,7 +31,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: test-case
+    id: test-result
     attributes:
       label: 🧪 테스트 결과
       description: |
