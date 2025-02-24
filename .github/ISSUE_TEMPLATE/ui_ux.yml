@@ -1,14 +1,28 @@
-name: "🎨 UI/UX 개선"
-description: "디자인 및 사용자 경험 개선 요청을 위한 템플릿입니다."
-title: "[🎨 UI/UX]: "
+name: 🎨 UI/UX 개선
+description: UI/UX 디자인을 추가하거나 수정하는 이슈입니다.
+title: "[🎨 UI/UX] "
 labels: ["🎨 ui/ux"]
-assignees: []
-
 body:
   - type: textarea
     id: ui-description
     attributes:
-      label: "📄 개선할 UI/UX 요소"
-      description: "어떤 UI/UX 요소를 개선할 계획인가요?"
+      label: 📄 설명
+      description: |
+        개선할 UI/UX 요소에 대한 설명을 자세히 작성해 주세요.
+        -
+      placeholder: |
+        예:
+        - 로그인 버튼 크기를 조정하여 접근성 개선
+        - 다크 모드 디자인 추가
+        - 폰트 크기 및 컬러 조정
     validations:
       required: true
+
+  - type: textarea
+    id: ui-more
+    attributes:
+      label: 📝 추가 정보
+      description: 추가로 공유하고 싶은 내용이 있다면 작성해 주세요.
+      placeholder: "예: 관련 디자인 레퍼런스 링크, Figma URL 등"
+    validations:
+      required: false

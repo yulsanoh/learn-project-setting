@@ -1,14 +1,28 @@
-name: "🔨 Refactor"
-description: "코드를 개선하려면 이 템플릿을 사용하세요."
-title: "[🔨 Refactor]: "
+name: 🔨 Refactor
+description: 코드 구조를 개선하는 리팩토링 이슈입니다.
+title: "[🔨 Refactor] "
 labels: ["🔨 refactor"]
-assignees: []
-
 body:
   - type: textarea
     id: refactor-description
     attributes:
-      label: "📄 리팩토링할 코드"
-      description: "어떤 부분을 개선할 예정인가요?"
+      label: 📄 설명
+      description: |
+        리팩토링할 코드에 대한 설명을 작성해 주세요.
+        -
+      placeholder: |
+        예:
+        - API 호출 방식을 개선하여 성능 최적화
+        - 컴포넌트 분리 및 코드 구조 개선
+        - 불필요한 코드 제거 및 가독성 향상
     validations:
       required: true
+
+  - type: textarea
+    id: refactor-more
+    attributes:
+      label: 📝 추가 정보
+      description: 추가로 공유하고 싶은 내용이 있다면 작성해 주세요.
+      placeholder: "예: 관련 문서, 참고할 코드 링크 등"
+    validations:
+      required: false
